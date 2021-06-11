@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="nome">Nome</string>
+    <string name="celular">Celular</string>
+    <string name="pessoal">Pessoal</string>
+    <string name="profissional">Profissional</string>
+    <string name="referencia">Referência</string>
+    <string name="email">E-mail</string>
+    <string name="salvar">Salvar</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="contatos">Contatos</string>
+    <string name="exibirTodos">Exibir todos os contatos</string>
+</resources>
