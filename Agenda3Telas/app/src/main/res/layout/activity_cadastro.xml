@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro"
+    android:background="@drawable/green_gradient_color">
+
+    <ImageButton
+        android:id="@+id/imageButtonHome"
+        android:layout_width="46dp"
+        android:layout_height="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tiny_house"
+        app:iconSize="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextNome"
+        style="@style/green_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/nome"
+        android:inputType="textCapWords"
+        android:textIsSelectable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonHome" />
+
+    <EditText
+        android:id="@+id/editTextCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="@string/celular"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/editTextNome"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNome"
+        style="@style/green_text"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOpcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCelular">
+
+        <RadioGroup
+            android:id="@+id/radioGroupOpcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioButtonPessoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pessoal"
+                style="@style/green_text" />
+            <!--//ao ser clicado chame android:onClick="clickRadioButton"/>-->
+
+            <RadioButton
+                android:id="@+id/radioButtonProfissional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profissional"
+                style="@style/green_text"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextReferencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/referencia"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextCelular"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOpcoes"
+        style="@style/green_text"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/editTextCelular"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutOpcoes"
+        style="@style/green_text"/>
+
+    <Button
+        android:id="@+id/buttonSalvar"
+        android:layout_marginTop="16dp"
+        android:text="@string/salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

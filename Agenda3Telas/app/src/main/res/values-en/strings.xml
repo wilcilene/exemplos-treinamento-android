@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Schedule</string>
+    <string name="nome">Name</string>
+    <string name="celular">Mobile</string>
+    <string name="pessoal">Personal</string>
+    <string name="profissional">Professional</string>
+    <string name="referencia">Reference</string>
+    <string name="email">E-mail</string>
+    <string name="salvar">Save</string>
+    <string name="pesquisar">Search</string>
+    <string name="contatos">Contacts</string>
+    <string name="exibirTodos">Show all contacts</string>
+    <string name="cadastrar">Register</string>
+
+</resources>

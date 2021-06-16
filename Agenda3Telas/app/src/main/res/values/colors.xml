@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_900l">#4c8c4a</color>
+    <color name="green_900">#1b5e20</color>
+    <color name="green_900d">#003300</color>
+    <color name="green_700ld">#1b5e20</color>
+    <color name="green_700">#388e3c</color>
+    <color name="green_superl">#d7ffd9</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
