@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Consulta"
-    android:background="@drawable/green_gradient_color">
+    android:background="@drawable/green_gradient_color"
+    tools:context=".Consulta">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButtonHome"
-        android:layout_width="34dp"
-        android:layout_height="38dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:clickable="true"
-        android:foregroundGravity="center_vertical|center_horizontal"
         android:scaleType="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tiny_house"/>
+        app:srcCompat="@drawable/tiny_house" />
 
     <EditText
         android:id="@+id/editTextPesquisar"
@@ -33,30 +32,29 @@
         android:id="@+id/imageButtonPesquisar"
         android:layout_width="40dp"
         android:layout_height="44dp"
+        android:backgroundTint="@color/green_900"
         app:layout_constraintStart_toEndOf="@+id/editTextPesquisar"
         app:layout_constraintTop_toTopOf="@+id/editTextPesquisar"
-        app:srcCompat="@android:drawable/ic_menu_search"
-        android:backgroundTint="@color/green_900"/>
+        app:srcCompat="@android:drawable/ic_menu_search" />
 
-    <TextView
-        android:id="@+id/textViewContatos"
-        style="@style/green_text"
-        android:layout_width="332dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/contatos"
-        android:textAlignment="inherit"
-        app:layout_constraintStart_toStartOf="@+id/editTextPesquisar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPesquisar" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvContatos"
+        android:layout_width="405dp"
+        android:layout_height="505dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPesquisar"
+        tools:listitem="@layout/item_contato"/>
 
     <Button
         android:id="@+id/buttonContatos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/exibirTodos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewContatos" />
+        app:layout_constraintTop_toBottomOf="@+id/rvContatos" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,4 +11,6 @@
     <string name="contatos">Contatos</string>
     <string name="exibirTodos">Exibir todos os contatos</string>
     <string name="cadastrar">Cadastrar</string>
+    <string name="labelDescOuEmail">Descrição ou email da pessoa</string>
+    <string name="excluir">Excluir</string>
 </resources>

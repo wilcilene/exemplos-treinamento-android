@@ -1,10 +1,12 @@
 package com.example.agenda3telas
 
+import android.content.ClipData
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var btnCadastro: Button
@@ -35,6 +37,4 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Log.d("Meu Aplicativo","No onStart Main.")
     }
-
-
 }

@@ -11,5 +11,6 @@
     <string name="contatos">Contacts</string>
     <string name="exibirTodos">Show all contacts</string>
     <string name="cadastrar">Register</string>
-
+    <string name="labelDescOuEmail">Description or email of the person</string>
+    <string name="excluir">Delete</string>
 </resources>
